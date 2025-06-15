@@ -1,4 +1,4 @@
-# 💅✨ Jodelstar Frontend ✨💅
+# 💅✨ Yodelstar Frontend ✨💅
 ### *The Kawaii React App for Yodeling Superstars!* 🌟
 
 ```
@@ -10,12 +10,12 @@
 
 [![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
-[![Custom Sparkles](https://img.shields.io/badge/✨-Custom%20Sparkles-FFD700)](https://github.com/yourusername/jodelstar)
+[![Custom Sparkles](https://img.shields.io/badge/✨-Custom%20Sparkles-FFD700)](https://github.com/yourusername/yodelstar)
 [![WebAudio API](https://img.shields.io/badge/WebAudio-API-FF6B6B)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 
 > 🎵 *"The most kawaii yodeling interface in the universe!"* 🎵
 
-Welcome to the **Jodelstar Frontend** - a magical React application that transforms yodeling analysis into a beautiful, interactive experience! Get ready for sparkles, real-time pitch visualization, and the most adorable yodeling interface ever created! 💖
+Welcome to the **Yodelstar Frontend** - a magical React application that transforms yodeling analysis into a beautiful, interactive experience! Get ready for sparkles, real-time pitch visualization, and the most adorable yodeling interface ever created! 💖
 
 ## 🌟 AMAZING FRONTEND FEATURES 🌟
 
@@ -42,7 +42,7 @@ Welcome to the **Jodelstar Frontend** - a magical React application that transfo
 ## 🚀 SETUP & DEVELOPMENT 🚀
 
 ### 🎪 **Prerequisites**
-Make sure you have the main Jodelstar project set up first! Check the [main README](../README.md) for complete setup instructions.
+Make sure you have the main Yodelstar project set up first! Check the [main README](../README.md) for complete setup instructions.
 
 ### 🍬 **Install Dependencies**
 ```bash
@@ -188,4 +188,4 @@ Want to make the frontend even more kawaii? YES PLEASE! 🙌
 **Now go forth and create the most beautiful yodeling experience ever!** 💖✨🌟
 
 ---
-*Made with 💖, ✨, and lots of React magic by the Jodelstar frontend team!*
+*Made with 💖, ✨, and lots of React magic by the Yodelstar frontend team!*

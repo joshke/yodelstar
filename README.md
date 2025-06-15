@@ -1,344 +1,227 @@
-# 🎤✨💖 JODELSTAR API ✨💖🎤
+# 🎤✨💖 YODELSTAR ✨💖🎤
 ### *The Ultimate Yodeling Analysis Experience!* 🌟
 
 ```
      ╔══════════════════════════════════════╗
-     ║  ♪♫♪ WELCOME TO JODELSTAR WORLD ♪♫♪  ║
+     ║  ♪♫♪ WELCOME TO YODELSTAR WORLD ♪♫♪  ║
      ║     Where Every Yodel is a Star!     ║
      ╚══════════════════════════════════════╝
 ```
 
-[![Made with Love](https://img.shields.io/badge/Made%20with-💖-ff69b4.svg)](https://github.com/yourusername/jodelstar)
+[![Made with Love](https://img.shields.io/badge/Made%20with-💖-ff69b4.svg)](https://github.com/yourusername/yodelstar)
 [![Flask](https://img.shields.io/badge/Flask-2.3.2-000000?style=flat&logo=flask)](https://flask.palletsprojects.com/)
 [![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Gemini AI](https://img.shields.io/badge/Gemini%20AI-Powered-4285F4?style=flat&logo=google)](https://ai.google.dev/)
-[![Custom Sparkles](https://img.shields.io/badge/✨-Custom%20Sparkles-FFD700)](https://github.com/yourusername/jodelstar)
+[![Custom Sparkles](https://img.shields.io/badge/✨-Custom%20Sparkles-FFD700)](https://github.com/yourusername/yodelstar)
 
 > 🎵 *"Yodel-ay-ee-oo! Your voice analysis dreams come true!"* 🎵
 
-Welcome to **Jodelstar API** - the most kawaii, most amazing, most SPECTACULAR yodeling analysis platform in the universe! 🌌✨ Get ready to analyze yodeling performances like the superstar you are! 
+Welcome to **Yodelstar** - the most kawaii, most amazing, most SPECTACULAR yodeling analysis platform in the universe! 🌌✨ Get ready to analyze yodeling performances like the superstar you are! 
 
-## 🌟 AMAZING FEATURES 🌟
+## 🌟 WHAT IS YODELSTAR? 🌟
 
-### 🎯 **Core Powers**
-- 🎤 **Advanced Yodel Analysis** - Detect every syllable, pitch, and yodel break!
-- 🆚 **Performance Comparison** - Compare your yodels against the masters!
-- 🎼 **Musical Pitch Detection** - Know exactly what notes you're hitting!
-- ⏱️ **Precise Timing Analysis** - Down to the millisecond accuracy!
-- 🧠 **AI-Powered by Gemini** - The smartest yodel brain in existence!
-- ✨ **Custom Sparkle System** - High-performance visual effects!
+Yodelstar is a full-stack application that combines cutting-edge AI analysis with real-time audio processing to create the ultimate yodeling experience! 
 
-### 🎨 **Tech Stack Superstars**
-**Backend Squad:**
-- 🐍 Python + Flask (The reliable duo!)
-- 🤖 Google Gemini AI (The genius!)
-- 🌐 Flask-CORS (The connector!)
-- 🔧 Gunicorn (The powerhouse!)
+### 🎯 **Core Features**
+- 🎤 **Advanced Yodel Analysis** - AI-powered detection of every syllable, pitch, and yodel break
+- 🆚 **Performance Comparison** - Compare your yodels against reference performances
+- 🎼 **Real-time Pitch Detection** - Live feedback with visual sparkle effects
+- ⏱️ **Precise Timing Analysis** - Millisecond-accurate performance metrics
+- 🧠 **Gemini AI Integration** - Smart analysis and feedback
+- ✨ **Custom Particle System** - High-performance visual effects
 
-**Frontend Squad:**
-- ⚛️ React 19.1.0 (The latest and greatest!)
-- 📘 TypeScript (Type safety is sexy!)
-- 🎨 Custom Particle System (Performance optimized!)
-- 🎵 Real-time Audio Analysis (WebAudio API magic!)
-
-## 🎵 LIVE PITCH ANALYSIS MAGIC! 🎵
-
-### 🔬 **How We Analyze Your Voice in Real-Time:**
-
-Our cutting-edge pitch analysis system uses advanced audio processing to give you instant feedback on your yodeling performance!
-
-#### 🎯 **The Technical Wizardry:**
-
-1. **🎤 Audio Capture:**
-   ```typescript
-   // High-quality audio capture with noise suppression
-   const stream = await navigator.mediaDevices.getUserMedia({ 
-     audio: {
-       echoCancellation: true,
-       noiseSuppression: true,
-       autoGainControl: true,
-       sampleRate: 44100
-     } 
-   });
-   ```
-
-2. **🧠 Fundamental Frequency Detection:**
-   - **YIN Algorithm** with auto-correlation for precise pitch detection
-   - **Frequency Range:** 80Hz - 800Hz (perfect for human voice)
-   - **Update Rate:** ~60 FPS for ultra-responsive feedback
-   - **Noise Filtering:** Advanced RMS volume detection
-
-3. **✨ Pitch Stabilization:**
-   ```typescript
-   // Median filter removes outliers, weighted average smooths results
-   const stabilizedPitch = stabilizePitch(newPitch, pitchHistory);
-   ```
-
-4. **🎯 Accuracy Calculation:**
-   - **Octave Intelligence:** Automatically detects if you're singing in different octaves
-   - **Cents Precision:** Measures pitch accuracy down to cents (1/100th of a semitone)
-   - **Forgiving Algorithm:** Gives partial credit for close attempts
-
-5. **🌟 Visual Feedback:**
-   - **Real-time Pitch Visualization:** See your voice as a red dot on the canvas
-   - **Confidence Indicators:** Visual feedback based on pitch stability
-   - **Particle Effects:** Custom sparkle system triggers on good performance
-
-#### 🎪 **Custom Sparkle System (Performance Optimized!):**
-
-We ditched `react-sparkle` and built our own high-performance particle system:
-
-```typescript
-// Custom particle system with star shapes and physics
-export const createHitParticles = (x: number, y: number, accuracy: number) => {
-  const particles = [];
-  for (let i = 0; i < particleCount; i++) {
-    particles.push({
-      x, y, 
-      vx: Math.cos(angle) * speed,
-      vy: Math.sin(angle) * speed - 2, // Upward bias
-      size: 4 + Math.random() * 8,
-      color: accuracy > 90 ? '#FFD700' : '#FFA500', // Gold for excellence!
-      rotation: Math.random() * Math.PI * 2
-    });
-  }
-};
+### 🏗️ **Architecture Overview**
+```
+🎤 Yodelstar Ecosystem 🎤
+├── 🧠 Backend API (Flask + Gemini AI)
+│   ├── Yodel analysis endpoints
+│   ├── Performance comparison
+│   └── Audio processing pipeline
+├── 💅 Frontend App (React + TypeScript)
+│   ├── Real-time pitch visualization
+│   ├── Custom sparkle particle system
+│   └── Interactive karaoke interface
+└── 🎵 Audio Analysis Engine
+    ├── YIN algorithm for pitch detection
+    ├── WebAudio API integration
+    └── Performance accuracy calculation
 ```
 
-**Why Custom Sparkles?**
-- 🚀 **60 FPS Performance** - Smooth animations even on slower devices
-- ⭐ **Star-shaped Particles** - More kawaii than boring circles!
-- 🎨 **Dynamic Colors** - Gold sparkles for perfect hits!
-- 🎯 **Accuracy-based Intensity** - Better performance = more sparkles!
+## 📚 DOCUMENTATION STRUCTURE 📚
 
-## 🚨 SUPER IMPORTANT: WAV Files Setup! 🚨
+This project is organized into focused documentation sections:
 
-### 🎵 **Why No WAV Files in Git?** 
-Due to copyright restrictions, we can't include the yodel WAV files in this repository! But don't worry - setting them up is SUPER easy! 💪✨
+### 🧠 **[API Documentation](api/README.md)**
+Complete backend setup, API endpoints, and audio analysis details:
+- Flask server configuration
+- Gemini AI integration
+- Audio processing pipeline
+- API endpoint reference
+- WAV file setup instructions
 
-### 🎯 **Step-by-Step WAV Setup Process:**
+### 💅 **[Frontend Documentation](yodelstar-app/README.md)**
+React application setup, components, and features:
+- React + TypeScript setup
+- Real-time audio analysis
+- Custom particle system
+- Component architecture
+- Browser compatibility
 
-1. **🎤 Get Your Yodel WAV Files:**
-   - Find some amazing yodel performances (royalty-free or your own!)
-   - Name them: `1.wav`, `2.wav`, `3.wav`, etc.
-   - Keep them short (2-6 seconds work best for analysis!)
+### 🚀 **Quick Start Guide (This Document)**
+Overall project setup and coordination between components.
 
-2. **🧠 Generate Analysis Files:**
-   ```bash
-   # Put your WAV files in the api/steps/ directory
-   cp your_yodel_files/*.wav api/steps/
-   
-   # Run the analysis script to generate JSON files
-   cd api
-   python analyze_steps.py
-   ```
-   
-   This will create `1_analysis.json`, `2_analysis.json`, etc. in the `api/steps/` directory! 🎉
+## 🚀 QUICK START SETUP 🚀
 
-3. **💅 Copy Files to Frontend:**
-   ```bash
-   # Copy BOTH the WAV files AND analysis JSON files to the frontend
-   cp api/steps/*.wav yodelstar-app/public/steps/
-   cp api/steps/*_analysis.json yodelstar-app/public/steps/
-   ```
-
-4. **🌟 You're Ready to Rock!**
-   Now your frontend will have access to both the audio files and their AI-generated analysis data!
-
-### 📁 **Expected File Structure:**
-```
-api/steps/
-├── 1.wav                    # Your yodel audio file
-├── 1_analysis.json         # AI-generated analysis
-├── 2.wav                    # Another yodel file
-└── 2_analysis.json         # Its analysis
-
-yodelstar-app/public/steps/
-├── 1.wav                    # Same files copied here
-├── 1_analysis.json         # For frontend access
-├── 2.wav                    
-└── 2_analysis.json         
-```
-
-### 🎪 **Pro Tips for WAV Files:**
-- 🎵 **Quality:** Use clear, high-quality recordings
-- ⏱️ **Length:** 2-6 seconds work best for detailed analysis
-- 🎤 **Content:** Pure yodeling works better than mixed vocals
-- 📊 **Format:** WAV format, 44.1kHz sample rate preferred
-
-## 🚀 SETUP PARTY TIME! 🚀
-
-### 🧠 Backend Setup: "The Brains Operation" 🧠
-
-1. **🎯 Clone this masterpiece:**
-   ```bash
-   git clone <your-repo-url>
-   cd jodelstar
-   ```
-
-2. **🤖 Assemble the Python Squad:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   *Installing: Flask 2.3.2, Google GenAI 0.4.0, and more amazing tools!*
-
-3. **🔑 Unlock the AI Magic:**
-   Create your `.env` file with the secret sauce:
-   ```env
-   GEMINI_API_KEY=your_super_secret_gemini_api_key_here
-   ```
-   *Get your key from [Google AI Studio](https://makersuite.google.com/app/apikey)*
-
-4. **🎵 Set Up Your WAV Files:**
-   Follow the [WAV Files Setup](#-super-important-wav-files-setup-) section above!
-
-5. **🚀 LAUNCH THE BACKEND:**
-   ```bash
-   gunicorn api.api:app
-   ```
-   *Backend will be live at `http://localhost:8000`* 🎉
-
-### 💅 Frontend Setup: "The Pretty Face Operation" 💅
-
-1. **🎪 Enter the App Dimension:**
-   ```bash
-   cd yodelstar-app
-   ```
-
-2. **🍬 Install the Goodies:**
-   ```bash
-   npm install
-   ```
-   *Installing React 19, TypeScript, and more kawaii components!*
-
-3. **🌟 SHOWTIME:**
-   ```bash
-   npm start
-   ```
-   *Frontend will sparkle at `http://localhost:3000`* ✨
-
-## 🎤 API ENDPOINTS: The Magic Happens Here! 🎤
-
-### 🎵 `/analyze-yodel` - The Star Analyzer
-**Transform your yodel into pure data magic!**
-
-```http
-POST /analyze-yodel
-Content-Type: application/json
-
-{
-  "wav_base64": "your_base64_encoded_wav_string"
-}
-```
-
-**✨ Response Magic:**
-```json
-{
-  "yodelAnalysis": {
-    "totalYodelSyllables": 42,
-    "phrases": [
-      {
-        "phraseNumber": 1,
-        "startTime": "00:01.2",
-        "endTime": "00:03.8",
-        "events": [
-          {
-            "timestamp": "00:01.5",
-            "type": "yodelBreak",
-            "syllable": "yo",
-            "pitch": { "note": "C", "octave": 4 }
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-### 🆚 `/compare-yodel` - The Ultimate Showdown
-**Compare your performance against the legends!**
-
-```http
-POST /compare-yodel
-Content-Type: application/json
-
-{
-  "original_wav_base64": "reference_performance",
-  "user_wav_base64": "your_amazing_attempt"
-}
-```
-
-**🏆 Get your score and detailed feedback!**
-
-## 🎯 Quick Start Examples
-
-### 🍎 macOS Magic:
+### 🎯 **1. Clone the Repository**
 ```bash
-# Encode your yodel
-base64 -i my_amazing_yodel.wav -o encoded_yodel.txt
-
-# Send it to the stars!
-curl -X POST -H "Content-Type: application/json" \
-  -d '{"wav_base64": "'$(cat encoded_yodel.txt)'"}' \
-  http://localhost:8000/analyze-yodel
+git clone https://github.com/yourusername/yodelstar.git
+cd yodelstar
 ```
 
-### ⚡ One-Liner Power Move:
+### 🧠 **2. Backend Setup**
 ```bash
-curl -X POST -H "Content-Type: application/json" \
-  -d '{"wav_base64": "'$(base64 -i your_yodel.wav)'"}' \
-  http://localhost:8000/analyze-yodel
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Set up environment variables
+echo "GEMINI_API_KEY=your_api_key_here" > api/.env
+
+# Start the API server
+cd api
+python -m gunicorn api:app --bind 0.0.0.0:8000 --reload
+```
+*Backend will be live at `http://localhost:8000`* 🎉
+
+**📖 For detailed backend setup:** See [API README](api/README.md)
+
+### 💅 **3. Frontend Setup**
+```bash
+# Install Node.js dependencies
+cd yodelstar-app
+npm install
+
+# Start the development server
+npm start
+```
+*Frontend will sparkle at `http://localhost:3000`* ✨
+
+**📖 For detailed frontend setup:** See [Frontend README](yodelstar-app/README.md)
+
+### 🎵 **4. Audio Files Setup**
+```bash
+# Add your yodel WAV files to api/steps/
+cp your_yodel_files/*.wav api/steps/
+
+# Generate analysis files
+cd api
+python analyze_steps.py
+
+# Copy files to frontend
+cp api/steps/*.wav yodelstar-app/public/steps/
+cp api/steps/*_analysis.json yodelstar-app/public/steps/
 ```
 
-## 🌈 Project Structure
+## 🎪 PROJECT STRUCTURE 🎪
+
 ```
-jodelstar/
-├── 🧠 api/                 # Backend magic
-│   ├── api.py             # Main Flask application
-│   ├── analyze_steps.py   # Analysis pipeline
-│   └── steps/             # Processing modules + WAV files
-├── 💅 yodelstar-app/      # Frontend sparkles
-│   ├── src/               # React components
-│   │   ├── utils/         # Audio analysis utilities
-│   │   │   ├── pitchAnalysis.ts    # YIN algorithm & accuracy
-│   │   │   ├── particleSystem.ts   # Custom sparkle system
-│   │   │   └── audioUtils.ts       # Frequency conversions
-│   │   └── components/    # UI components
-│   ├── public/            # Static assets
-│   │   └── steps/         # WAV files + analysis JSON
-│   └── package.json       # Dependencies
-├── 📋 requirements.txt    # Python dependencies
-└── 🎯 README.md          # This amazing file!
+yodelstar/
+├── 📋 README.md              # This overview document
+├── 📋 requirements.txt       # Python dependencies
+├── 🧠 api/                   # Backend Flask application
+│   ├── 📋 README.md         # API-specific documentation
+│   ├── 🐍 api.py            # Main Flask application
+│   ├── 🔧 analyze_steps.py  # Audio analysis pipeline
+│   └── 📁 steps/            # WAV files and analysis data
+├── 💅 yodelstar-app/        # Frontend React application
+│   ├── 📋 README.md         # Frontend-specific documentation
+│   ├── 📦 package.json      # Node.js dependencies
+│   ├── 📁 src/              # React source code
+│   │   ├── 🎨 components/   # UI components
+│   │   ├── 🔧 utils/        # Audio analysis utilities
+│   │   └── 🪝 hooks/        # Custom React hooks
+│   └── 📁 public/           # Static assets
+│       └── 📁 steps/        # WAV files for frontend
+└── 🔒 .gitignore            # Git ignore patterns
 ```
 
-## 🎊 Contributing to the Magic
+## 🌈 TECHNOLOGY STACK 🌈
 
-Want to make Jodelstar even more amazing? YES PLEASE! 🙌
+### 🧠 **Backend Technologies**
+- **🐍 Python 3.8+** - Core language
+- **🌶️ Flask 2.3.2** - Web framework
+- **🤖 Google Gemini AI** - Advanced audio analysis
+- **🌐 Flask-CORS** - Cross-origin resource sharing
+- **🔧 Gunicorn** - Production WSGI server
 
-1. **🍴 Fork this repo** (Click that fork button like it's a K-pop heart!)
-2. **🌟 Create your feature branch** (`git checkout -b feature/AmazingFeature`)
-3. **💖 Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **🚀 Push to the branch** (`git push origin feature/AmazingFeature`)
-5. **🎉 Open a Pull Request** (Make it sparkle!)
+### 💅 **Frontend Technologies**
+- **⚛️ React 19.1.0** - UI framework
+- **📘 TypeScript 4.9.5** - Type safety
+- **🎵 WebAudio API** - Real-time audio processing
+- **✨ Custom Particle System** - High-performance animations
+- **🎨 CSS3 + Modern Styling** - Beautiful UI
 
-### 🎯 Ideas for Contributions:
-- 🎨 More kawaii UI components
-- 🎵 Additional audio analysis features
-- 🌍 Multi-language support
-- 📱 Mobile app version
-- 🎪 More sparkle effects (obviously!)
+### 🔧 **Development Tools**
+- **📦 npm** - Package management
+- **🔄 Git** - Version control
+- **🧪 Jest** - Testing framework
+- **📝 ESLint + Prettier** - Code quality
 
-## 🏆 Hall of Fame
+## 🎯 QUICK API TEST 🎯
 
-*Coming soon: Your name could be here!* ⭐
+Once both servers are running, test the API:
 
-## 📞 Support & Community
+```bash
+# Test backend health
+curl http://localhost:8000/analyze-yodel -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"wav_base64": "test"}'
 
-- 🐛 **Found a bug?** Open an issue with lots of emojis!
-- 💡 **Have an idea?** We love creative suggestions!
-- 🤝 **Need help?** Join our community discussions!
-- 💌 **Just want to say hi?** We love making new friends!
+# Expected response: {"error":"Invalid base64 encoding"}
+```
+
+## 🎊 CONTRIBUTING 🎊
+
+We love contributions! Here's how to get involved:
+
+1. **🍴 Fork the repository**
+2. **🌟 Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **💖 Make your changes** (follow our coding standards)
+4. **🧪 Test your changes** (both backend and frontend)
+5. **📝 Update documentation** if needed
+6. **🚀 Submit a pull request**
+
+### 🎯 **Contribution Areas**
+- 🎨 UI/UX improvements
+- 🎵 Audio analysis enhancements
+- 🌍 Internationalization
+- 📱 Mobile responsiveness
+- 🧪 Testing coverage
+- 📖 Documentation improvements
+
+## 🐛 TROUBLESHOOTING 🐛
+
+### Common Issues:
+- **Backend not starting?** Check your Python version and dependencies
+- **Frontend build errors?** Ensure Node.js 16+ is installed
+- **CORS issues?** Verify Flask-CORS is properly configured
+- **Audio not working?** Check browser permissions for microphone access
+
+**📖 For detailed troubleshooting:** Check the specific README files in `api/` and `yodelstar-app/`
+
+## 📞 SUPPORT & COMMUNITY 📞
+
+- 🐛 **Bug Reports:** Open an issue with detailed reproduction steps
+- 💡 **Feature Requests:** Share your ideas in the discussions
+- 🤝 **Questions:** Check existing issues or start a discussion
+- 💌 **General Chat:** We love hearing from the community!
+
+## 🏆 ACKNOWLEDGMENTS 🏆
+
+- 🎤 **Yodeling Community** - For inspiring this project
+- 🤖 **Google Gemini Team** - For amazing AI capabilities
+- ⚛️ **React Team** - For the fantastic framework
+- 🌟 **Open Source Community** - For all the amazing tools
 
 ## 🎉 LET'S YODEL TOGETHER! 🎉
 
@@ -351,4 +234,4 @@ Want to make Jodelstar even more amazing? YES PLEASE! 🙌
 **Now go forth and yodel like the star you were born to be!** 💖✨🌟
 
 ---
-*Made with 💖, ✨, and lots of yodeling practice by the Jodelstar team!* 
+*Made with 💖, ✨, and lots of yodeling practice by the Yodelstar team!* 

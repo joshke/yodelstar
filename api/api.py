@@ -3,7 +3,7 @@ import json
 import base64
 import logging
 from datetime import datetime
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory, send_file
 from flask_cors import CORS
 from google import genai
 from google.genai import types
@@ -22,8 +22,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Initialize Flask app
-app = Flask(__name__)
+# Initialize Flask app with static folder for React build
+app = Flask(__name__, static_folder='../static', static_url_path='')
 CORS(app)  # Enable CORS for all routes
 
 logger.info("Flask app initialized with CORS enabled")
@@ -744,6 +744,40 @@ def mock_compare_yodel():
     logger.info(f"[{request_id}] Returning mock comparison response.")
     return jsonify(mock_response)
 
+
+# Health check endpoint for Docker/Cloud deployment
+@app.route("/health", methods=["GET"])
+def health_check():
+    """Health check endpoint for container orchestration"""
+    return jsonify({
+        "status": "healthy",
+        "timestamp": datetime.now().isoformat(),
+        "gemini_configured": bool(GEMINI_API_KEY)
+    }), 200
+
+# Serve React app
+@app.route('/')
+def serve_react_app():
+    """Serve the React application"""
+    try:
+        return send_from_directory(app.static_folder, 'index.html')
+    except Exception as e:
+        logger.error(f"Error serving React app: {str(e)}")
+        return jsonify({"error": "Frontend not available"}), 404
+
+# Serve static files for React app
+@app.route('/<path:path>')
+def serve_static_files(path):
+    """Serve static files for the React application"""
+    try:
+        return send_from_directory(app.static_folder, path)
+    except Exception as e:
+        # If file not found, serve React app (for client-side routing)
+        try:
+            return send_from_directory(app.static_folder, 'index.html')
+        except Exception as e2:
+            logger.error(f"Error serving static file {path}: {str(e2)}")
+            return jsonify({"error": "File not found"}), 404
 
 if __name__ == "__main__":
     logger.info("Starting Flask application on port 5002")

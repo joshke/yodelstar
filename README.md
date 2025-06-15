@@ -1,5 +1,5 @@
 # 🎤✨💖 YODELSTAR ✨💖🎤
-### *The Ultimate Yodeling Analysis Experience!* 🌟
+### *The Ultimate Yodeling Karaoke Experience!* 🌟
 
 ```
      ╔══════════════════════════════════════╗
@@ -85,6 +85,14 @@ React application setup, components, and features:
 - Custom particle system
 - Component architecture
 - Browser compatibility
+
+### 🚀 **[Deployment Guide](DEPLOYMENT.md)**
+Complete Google Cloud deployment with Docker:
+- Docker containerization
+- Google Cloud Run deployment
+- Automated CI/CD with Cloud Build
+- Monitoring and troubleshooting
+- Cost optimization tips
 
 ### 🚀 **Quick Start Guide (This Document)**
 Overall project setup and coordination between components.

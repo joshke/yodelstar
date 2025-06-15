@@ -46,7 +46,7 @@ Make sure you have the main Jodelstar project set up first! Check the [main READ
 
 ### 🍬 **Install Dependencies**
 ```bash
-cd jodelstar-app
+cd yodelstar-app
 npm install
 ```
 

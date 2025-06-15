@@ -139,8 +139,8 @@ Due to copyright restrictions, we can't include the yodel WAV files in this repo
 3. **💅 Copy Files to Frontend:**
    ```bash
    # Copy BOTH the WAV files AND analysis JSON files to the frontend
-   cp api/steps/*.wav jodelstar-app/public/steps/
-   cp api/steps/*_analysis.json jodelstar-app/public/steps/
+   cp api/steps/*.wav yodelstar-app/public/steps/
+   cp api/steps/*_analysis.json yodelstar-app/public/steps/
    ```
 
 4. **🌟 You're Ready to Rock!**
@@ -154,7 +154,7 @@ api/steps/
 ├── 2.wav                    # Another yodel file
 └── 2_analysis.json         # Its analysis
 
-jodelstar-app/public/steps/
+yodelstar-app/public/steps/
 ├── 1.wav                    # Same files copied here
 ├── 1_analysis.json         # For frontend access
 ├── 2.wav                    
@@ -203,7 +203,7 @@ jodelstar-app/public/steps/
 
 1. **🎪 Enter the App Dimension:**
    ```bash
-   cd jodelstar-app
+   cd yodelstar-app
    ```
 
 2. **🍬 Install the Goodies:**
@@ -298,7 +298,7 @@ jodelstar/
 │   ├── api.py             # Main Flask application
 │   ├── analyze_steps.py   # Analysis pipeline
 │   └── steps/             # Processing modules + WAV files
-├── 💅 jodelstar-app/      # Frontend sparkles
+├── 💅 yodelstar-app/      # Frontend sparkles
 │   ├── src/               # React components
 │   │   ├── utils/         # Audio analysis utilities
 │   │   │   ├── pitchAnalysis.ts    # YIN algorithm & accuracy

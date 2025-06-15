@@ -33,6 +33,22 @@ Yodelstar is a full-stack application that combines cutting-edge AI analysis wit
 - 🧠 **Gemini AI Integration** - Smart analysis and feedback
 - ✨ **Custom Particle System** - High-performance visual effects
 
+## 📸 Screenshots 📸
+
+Here's a sneak peek of Yodelstar in action!
+
+![Yodelstar Recording Interface](screenshots/1.jpeg)
+*The main recording screen where the yodeling magic happens.*
+
+![Yodelstar Analysis in Progress](screenshots/2.jpeg)
+*Our AI hard at work analyzing your performance.*
+
+![Yodelstar Performance Summary](screenshots/3.jpeg)
+*Get an overall score and assessment of your yodel.*
+
+![Yodelstar Detailed Feedback](screenshots/4.jpeg)
+*Dive deep into pitch accuracy and get tips for improvement.*
+
 ### 🏗️ **Architecture Overview**
 ```
 🎤 Yodelstar Ecosystem 🎤

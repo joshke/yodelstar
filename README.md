@@ -19,6 +19,8 @@
 
 Welcome to **Yodelstar** - the most kawaii, most amazing, most SPECTACULAR yodeling analysis platform in the universe! 🌌✨ Get ready to analyze yodeling performances like the superstar you are! 
 
+🏆 **Born at the [Music & AI Hackathon 2025](https://music-ai-hackathon.com/)** in Nara, Japan! 🇯🇵 This project was created during an epic 24-hour hackathon at the historic Gyokuzoin Temple, where ancient Buddhist traditions met cutting-edge AI technology to create the ultimate yodeling experience!
+
 ## 🌟 WHAT IS YODELSTAR? 🌟
 
 Yodelstar is a full-stack application that combines cutting-edge AI analysis with real-time audio processing to create the ultimate yodeling experience! 
@@ -218,10 +220,22 @@ We love contributions! Here's how to get involved:
 
 ## 🏆 ACKNOWLEDGMENTS 🏆
 
+### 🎪 **Music & AI Hackathon 2025** 
+Special thanks to the [Music & AI Hackathon](https://music-ai-hackathon.com/) organizers for creating such an inspiring environment! This project was born during the 24-hour hackathon (June 14-15, 2025) at the beautiful Gyokuzoin Temple in Nara, Japan. The unique setting - combining ancient Buddhist traditions with modern AI technology - provided the perfect atmosphere for creating something truly magical! 🏯✨
+
+**Hackathon Highlights:**
+- 🏯 **Historic Venue:** Gyokuzoin Temple on Mount Shigi
+- ⏰ **24-Hour Challenge:** Non-stop coding with morning prayer rituals
+- 🌍 **International Team:** Developers from around the world
+- 🎯 **Music & AI Focus:** Perfect match for our yodeling analysis project
+- 🏆 **World Expo 2025:** Part of the official World Expo events
+
+### 🙏 **Community Thanks**
 - 🎤 **Yodeling Community** - For inspiring this project
 - 🤖 **Google Gemini Team** - For amazing AI capabilities
 - ⚛️ **React Team** - For the fantastic framework
 - 🌟 **Open Source Community** - For all the amazing tools
+- 🇯🇵 **Hackathon Participants** - For the incredible collaborative spirit
 
 ## 🎉 LET'S YODEL TOGETHER! 🎉
 
